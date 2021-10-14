@@ -54,7 +54,7 @@ I had quite a bit of fun with this project. I learned how to implement CSS Grid 
 
 ### Continued development
 
-I definitly would like to learn more about Accessibility and SEO. I feel like that could help shape the code that I'm writing to flow better.
+I definitely would like to learn more about Accessibility and SEO. I feel like that could help shape the code that I'm writing to flow better.
 
 ### Useful resources
 
