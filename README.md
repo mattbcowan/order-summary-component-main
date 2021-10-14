@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://mattbcowan.github.io/order-summary-component-main/)
+- Solution URL: [Solution](https://mattbcowan.github.io/order-summary-component-main/)
 
 ## My process
 
