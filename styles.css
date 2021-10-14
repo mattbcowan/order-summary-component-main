@@ -87,6 +87,12 @@ body {
   grid-row: 1/2;
   font-weight: 700;
   font-size: 0.9em;
+  cursor: pointer;
+}
+
+.card-plan-info a:hover {
+  color: #766cf1;
+  text-decoration: none;
 }
 
 .card-buttons {
@@ -109,12 +115,36 @@ body {
   border: none;
   border-radius: 0.75em;
   box-shadow: 0 0 10px 0 var(--desaturated-blue);
+  cursor: pointer;
+}
+
+.payment-btn:hover {
+  background-color: #766cf1;
 }
 
 .cancel-btn {
   color: var(--desaturated-blue);
   border: none;
   background-color: white;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  color: #0b122f;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 1440px) {
