@@ -1,0 +1,148 @@
+:root {
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --bright-blue: hsl(245, 75%, 52%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--pale-blue);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card {
+  width: 325px;
+  height: 569px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 30px 5px var(--desaturated-blue);
+}
+
+.svg-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text-info {
+  text-align: center;
+  padding: 0 1.75em;
+}
+
+.card-text-info h1 {
+  margin-bottom: 0.75em;
+}
+
+.card-text-info p {
+  margin-top: 0em;
+  margin-bottom: 1.25em;
+  line-height: 1.75em;
+  color: #7b7e8f;
+  font-weight: 500;
+}
+
+.card-plan-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5em;
+  background-color: var(--very-pale-blue);
+  margin: 1em;
+  padding: 0.75em 1em;
+  align-items: center;
+  border-radius: 1em;
+}
+
+.plan-info-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.plan-info-text {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.plan-info-text span {
+  color: var(--desaturated-blue);
+}
+
+.card-plan-info a {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.btn {
+  width: 100%;
+  margin: 0.5em 0;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.payment-btn {
+  background-color: var(--bright-blue);
+  color: white;
+  padding: 1em 0;
+  border: none;
+  border-radius: 0.75em;
+  box-shadow: 0 0 10px 0 var(--desaturated-blue);
+}
+
+.cancel-btn {
+  color: var(--desaturated-blue);
+  border: none;
+  background-color: white;
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/bg-premium-intro-1.svg");
+    background-size: contain;
+  }
+  .container {
+    max-width: 1300px;
+    max-height: 812px;
+    box-shadow: 0 0 20px 0 var(--desaturated-blue);
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+  .card {
+    height: 632px;
+    width: 408px;
+  }
+
+  .card-plan-info {
+    margin: 1.5em 3em;
+  }
+
+  .card-buttons {
+    margin: 1.5em 3em;
+  }
+}
